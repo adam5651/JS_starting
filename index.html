@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Document</title>
+  
+</head>
+<body>
+  
+  <section>
+    <p id="randomMessage">bude to tu?</p>
+    <p id="addOne">0</p>
+    <button onclick="randomMessage()" class="button" type="button" >Random message</button>
+
+    <button onclick="addOne()" >+1</button>
+    <button onclick="minusOne()" >-1</button>
+    <input type="number" id="multiply">
+    <button onclick="multiply()" > <---- multiply by this</button>
+    <button onclick="zero()">come to Null</button>
+  </section>
+  <section>
+    <p>premeniť eurá</p>
+    
+    <p id="výsledokPremenyMeny">výsledok</p>
+    
+    <button onclick="premeň()">premeň</button>
+    <input type="number" id="premenHodnota">
+    
+  <select id="mySelect" onchange="premeň()">
+    <option value="USD">USD</option>
+    <option value="KČ">KČ</option>
+  </select>
+
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
